@@ -7,13 +7,13 @@ function newNav(){
     let innerHtml_nav = '<a href="index.html">\n' +
         '        <div class="navs fl" id="nav-1">首页</div>\n' +
         '    </a>\n' +
-        '    <a href="#">\n' +
+        '    <a href="classmates">\n' +
         '        <div class="navs fl" id="nav-2">个人</div>\n' +
         '    </a>\n' +
         '    <a href="#">\n' +
         '        <div class="navs fl" id="nav-3">班级</div>\n' +
         '    </a>\n' +
-        '    <a href="">\n' +
+        '    <a href="albums_homepage">\n' +
         '        <div class="navs fl now" id="nav-4">相册</div>\n' +
         '    </a>\n' +
         '    <div class="navs" id="nav-5">未登录</div>'
