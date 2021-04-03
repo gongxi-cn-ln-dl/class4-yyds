@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>19联欢会</title>
+    <link href="../../css/main.css" rel="stylesheet">
+    <link href="../../css/bigImg.css" rel="stylesheet">
+</head>
+<body id="app">
+<div id="nav">
+
+</div>
+
+<div id="exit" onclick="reLogin('退出登录')">
+    <img alt="退出" height="64" src="../../res/exit.png" width="64">
+</div>
+
+<div id="pic-container">
+    <img src="../../res/videoPreview/19联欢会/DSCN1520.jpg" alt="DSCN1520.jpg" class="video pic" onclick="playV('DSCN1520')">
+    <img src="../../res/videoPreview/19联欢会/DSCN1521.jpg" alt="DSCN1521.jpg" class="video pic" onclick="playV('DSCN1521')">
+</div>
+
+<div id="bigImg" style="visibility: hidden">
+
+    <div id="showImg">
+
+    </div>
+
+</div>
+
+<div id="ChooseX">
+    <p>清晰度：</p>
+<!--    <img src="res/close.png" alt="0">-->
+    <input name="0" type="radio" value="480p" >480p
+    <input checked name="0" type="radio" value="720p">720p
+    <input name="0" type="radio" value="1080p">1080p
+</div>
+</body>
+<script src="../../js/md5.js"></script>
+<script src="../../js/crypto-js-4.0.0/crypto-js-4.0.0/crypto-js.js"></script>
+<script src="../../js/main.js"></script>
+<script src="../../js/bigImg.js"></script>
+<script src="../../js/showVideo.js"></script>
+<script src="../../js/jquery.js"></script>
+</html>
