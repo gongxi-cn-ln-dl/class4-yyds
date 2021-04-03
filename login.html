@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div id="container">
+        <div id="login_window">
+            <form action="index.html" method="get" onsubmit="return check()">
+                <input type="text" class="inputs" id="teacher_name" placeholder="班主任名" maxlength="3"><br/>
+                <input type="text" class="inputs" id="student_name" placeholder="你的名字" maxlength="3"><br/>
+                <input type="text" class="inputs" id="student_birthday" placeholder="你的生日" maxlength="6"><br/>
+                <input type="submit" id="submit">
+            </form>
+        </div>
+    </div>
+</body>
+<script src="js/md5.js"></script>
+<script src="js/login.js"></script>
+</html>

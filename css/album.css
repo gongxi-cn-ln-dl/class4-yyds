@@ -1,0 +1,45 @@
+#albums_container{
+    margin: 0 auto;
+    width: 80%;
+    text-align: justify;
+    text-align-last: justify;
+}
+.albumP{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    text-align-last: center;
+
+    border: 1px #456268 solid;
+    border-radius: 20px;
+    box-shadow: 0 0 8px #456268;
+    place-items: center;
+
+    margin: 2em;
+
+    color: #456268;
+
+}
+.albumP img{
+    width: 150px;
+    height: 150px;
+    display: grid;
+    place-items: center;
+    position: relative;
+    top: 50%;
+    margin: 0 auto;
+    transform: translateY(-65%);
+}
+.albumP p{
+    font-size: xxx-large;
+    margin-top: 50px;
+}
+.albumP:hover{
+    transition: background-color 0.5s;
+    background-color: #456268;
+    color: #fcf8ec;
+}
+#albums_container a{
+    text-decoration: none;
+}
