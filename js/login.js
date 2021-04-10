@@ -21,7 +21,7 @@ function check(){
     let text = tNV + sNV + sBV
     let token = md5(text)
 
-    let classmatesMd5 = ["e837a7b5d8117b6f60bc4702fba92805","f1b223b89321402d274873963b08cf1a","cf5a504b426feb5475da20561089bff9"]
+    let classmatesMd5 = ["e837a7b5d8117b6f60bc4702fba92805"]
 
     let canBeFound_bool = false
 
