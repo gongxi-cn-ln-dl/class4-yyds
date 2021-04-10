@@ -4,20 +4,20 @@ function newNav(){
     let navElement = document.getElementById('nav')
     let exitElement = document.getElementById('exit')
 
-    let innerHtml_nav = '<a href="/Web000/index.html">\n' +
+    let innerHtml_nav = '<a href="/class4-yyds/index.html">\n' +
         '        <div class="navs fl" id="nav-1">首页</div>\n' +
         '    </a>\n' +
-        '    <a href="/Web000/classmates.html">\n' +
+        '    <a href="/class4-yyds/classmates.html">\n' +
         '        <div class="navs fl" id="nav-2">个人</div>\n' +
         '    </a>\n' +
         '    <a href="#">\n' +
         '        <div class="navs fl" id="nav-3">班级</div>\n' +
         '    </a>\n' +
-        '    <a href="/Web000/albums_homepage.html">\n' +
+        '    <a href="/class4-yyds/albums_homepage.html">\n' +
         '        <div class="navs fl" id="nav-4">相册</div>\n' +
         '    </a>\n' +
         '    <div class="navs" id="nav-5">未登录</div>'
-    let innerHtml_exit = '<img alt="退出" height="64" src="/Web000/res/exit.png" width="64">'
+    let innerHtml_exit = '<img alt="退出" height="64" src="/class4-yyds/res/exit.png" width="64">'
     navElement.innerHTML = innerHtml_nav
     exitElement.innerHTML = innerHtml_exit
 
