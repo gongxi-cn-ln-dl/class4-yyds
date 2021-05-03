@@ -1,45 +1,86 @@
-#albums_container{
-    margin: 0 auto;
-    width: 80%;
-    text-align: justify;
-    text-align-last: justify;
+*{
+    box-sizing: border-box;
+    line-height: 100%;
+    font-family: Consolas;
+    font-size: 25pt;
 }
-.albumP{
-    display: inline-block;
-    width: 300px;
-    height: 300px;
-    text-align: center;
-    text-align-last: center;
-
-    border: 1px #456268 solid;
-    border-radius: 20px;
-    box-shadow: 0 0 8px #456268;
-    place-items: center;
-
-    margin: 2em;
-
-    color: #456268;
-
-}
-.albumP img{
-    width: 150px;
-    height: 150px;
-    display: grid;
-    place-items: center;
-    position: relative;
-    top: 50%;
-    margin: 0 auto;
-    transform: translateY(-65%);
-}
-.albumP p{
-    font-size: xxx-large;
-    margin-top: 50px;
-}
-.albumP:hover{
-    transition: background-color 0.5s;
-    background-color: #456268;
-    color: #fcf8ec;
-}
-#albums_container a{
+a{
     text-decoration: none;
+}
+#main-container{
+    display: flex;
+    margin: 0 auto;
+    padding: 100px 15px;
+    max-width: 1200px;
+}
+
+#timeline-title{
+    position: relative;
+    margin-left: .5rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    font-size: 1.72em;
+}
+.timeline-item:before{
+    position: absolute;
+    left: calc(-0.5rem + 8.5px);
+    width: .3rem;
+    height: 0.3rem;
+    border: .15rem solid #49b1f5;
+    border-radius: .3rem;
+    content: '';
+    transition: all .2s ease-in-out;
+}
+.timeline-item:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    width: .1rem;
+    height: 6rem;
+    background: #aadafa;
+    content: '';
+}
+.timeline-item-year:before{
+    border-color: #ff7242;;
+}
+.timeline-item-year:after{
+    height: 2rem;
+}
+.timeline-item{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 0 1rem .5rem;
+    transition: all .2s ease-in-out;
+    padding: 0 .8rem;
+}
+.timeline-item-info{
+    margin-left: 1.2em;
+}
+.timeline-item-info time{
+    color: #858585;
+    font-size: 90%;
+    display: inline-block;
+}
+.timeline-item-info time img{
+    margin-right: 4px;
+    width: 17px;
+}
+.timeline-item-info a{
+    color: #000;
+    line-height: 2rem;
+    font-family: 宋体;
+    font-size: 1.1em;
+    transition: all .3s;
+}
+.timeline-item-info a:hover{
+    color: #49b1f5;
+    transform: translateX(10px);
+    margin-left: 10px;
+}
+.remark{
+    font-size: 75%;
+    color: #858585;
+    font-family: 微软雅黑;
 }

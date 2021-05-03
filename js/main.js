@@ -5,40 +5,40 @@ function newNav(a){
     let exitElement = document.getElementById('exit')
     let innerHtml_nav
     let innerHtml_exit
-    if(a==='a'){
-        innerHtml_nav = '<a href="../../index.html">\n' +
-        '        <div class="navs fl" id="nav-1">首页</div>\n' +
-        '    </a>\n' +
-        '    <a href="../../classmates.html">\n' +
-        '        <div class="navs fl" id="nav-2">个人</div>\n' +
-        '    </a>\n' +
-        '    <a href="#">\n' +
-        '        <div class="navs fl" id="nav-3">班级</div>\n' +
-        '    </a>\n' +
-        '    <a href="../../albums_homepage.html">\n' +
-        '        <div class="navs fl" id="nav-4">相册</div>\n' +
-        '    </a>\n' +
-        '    <div class="navs" id="nav-5">未登录</div>'
-        innerHtml_exit = '<img alt="退出" height="64" src="../../res/exit.png" width="64">'
-    }
-    else{
-        innerHtml_nav = '<a href="index.html">\n' +
-            '        <div class="navs fl" id="nav-1">首页</div>\n' +
-            '    </a>\n' +
-            '    <a href="classmates.html">\n' +
-            '        <div class="navs fl" id="nav-2">个人</div>\n' +
-            '    </a>\n' +
-            '    <a href="#">\n' +
-            '        <div class="navs fl" id="nav-3">班级</div>\n' +
-            '    </a>\n' +
-            '    <a href="albums_homepage.html">\n' +
-            '        <div class="navs fl" id="nav-4">相册</div>\n' +
-            '    </a>\n' +
-            '    <div class="navs" id="nav-5">未登录</div>'
-        innerHtml_exit = '<img alt="退出" height="64" src="res/exit.png" width="64">'
-    }
-    navElement.innerHTML = innerHtml_nav
-    exitElement.innerHTML = innerHtml_exit
+    // if(a==='a'){
+    //     innerHtml_nav = '<a href="../../index.html">\n' +
+    //     '        <div class="navs fl" id="nav-1">首页</div>\n' +
+    //     '    </a>\n' +
+    //     '    <a href="../../classmates.html">\n' +
+    //     '        <div class="navs fl" id="nav-2">个人</div>\n' +
+    //     '    </a>\n' +
+    //     '    <a href="#">\n' +
+    //     '        <div class="navs fl" id="nav-3">班级</div>\n' +
+    //     '    </a>\n' +
+    //     '    <a href="../../timeline.html">\n' +
+    //     '        <div class="navs fl" id="nav-4">时间轴</div>\n' +
+    //     '    </a>\n' +
+    //     '    <div class="navs" id="nav-5">未登录</div>'
+    //     innerHtml_exit = ''
+    // }
+    // else{
+    //     innerHtml_nav = '<a href="index.html">\n' +
+    //         '        <div class="navs fl" id="nav-1">首页</div>\n' +
+    //         '    </a>\n' +
+    //         '    <a href="classmates.html">\n' +
+    //         '        <div class="navs fl" id="nav-2">个人</div>\n' +
+    //         '    </a>\n' +
+    //         '    <a href="#">\n' +
+    //         '        <div class="navs fl" id="nav-3">班级</div>\n' +
+    //         '    </a>\n' +
+    //         '    <a href="timeline.html">\n' +
+    //         '        <div class="navs fl" id="nav-4">时间轴</div>\n' +
+    //         '    </a>\n' +
+    //         '    <div class="navs" id="nav-5">未登录</div>'
+    //     innerHtml_exit = '<img alt="退出" height="64" src="res/exit.png" width="64">'
+    // }
+    // navElement.innerHTML = innerHtml_nav
+    // exitElement.innerHTML = innerHtml_exit
 
 }
 function checkCookies() {
@@ -81,5 +81,5 @@ function reLogin(mode) {
     document.cookie = `deletetoken = `
     document.cookie = `studentName = `
 }
-newNav('a')
-checkCookies()
+// newNav('a')
+// checkCookies()
