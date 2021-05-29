@@ -1,0 +1,43 @@
+/*本css文件由ZBN整理自萌娘百科*/
+#content {
+    margin-left: 1em;
+    margin-right: 1em;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 110px;
+    z-index: 1;
+}
+h1 {
+    border-bottom: 2px solid #49b1f5;
+    padding-left: 0.5em;
+    padding-bottom: 3px;
+}
+.infoBox {
+    display: table-cell;
+    padding: .25em .5em .25em 1.3em;
+    width: 100%;
+    vertical-align: middle;
+    max-width: 100%;
+    border-left: 10px solid var(--Color);
+    margin: auto;
+}
+span {
+    color: var(--Color)
+}
+.Quotation-Marks {
+    display: table-cell;
+    color: #B2B7F2;
+    font-size: 36px;
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px 10px;
+    line-height: 100%;
+}
+.Key-Sentence {
+    display: table-cell;
+    text-align: left;
+    padding: 1em;
+    vertical-align: middle;
+    font-size: 30px;
+    color: var(--Color);
+}

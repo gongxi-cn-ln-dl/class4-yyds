@@ -7,7 +7,7 @@
 #nav{
     position: absolute;
     top: 0;
-    z-index: 90;
+    z-index: 1;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -19,7 +19,6 @@
     transition: all .5s;
     background: rgba(255,255,255,.8);
     box-shadow: 0 5px 6px -5px rgb(133 133 133 / 60%);
-
 }
 #blog-name{
     flex: 1;
@@ -31,4 +30,10 @@
     position: relative;
     display: inline-block;
     padding: 0 0 0 .7rem;
+    color: #000000;
+    text-decoration: none;
+}
+.fl:hover{
+    color: #49b1f5;
+    transition: all .3s;
 }

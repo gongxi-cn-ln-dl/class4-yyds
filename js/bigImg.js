@@ -10,7 +10,7 @@ function showBigger(folderName,picName,width,height) {
     let containerObj = document.getElementById("showImg")
     let imgObj = document.createElement("img")
 
-    imgObj.src = `../../res/lighter_img/${folderName}/${picName}`
+    imgObj.src = `https://cdn.jsdelivr.net/gh/gongxi-cn-ln-dl/repo-for-class4/lighter_img/${folderName}/${picName}`
     imgObj.alt = picName
     imgObj.id = "Pic-showing"
 
