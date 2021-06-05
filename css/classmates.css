@@ -6,7 +6,7 @@
     margin-top: 110px;
     z-index: 1;
 }
-h1 {
+.firstHeading {
     border-bottom: 2px solid #49b1f5;
     padding-left: 0.5em;
     padding-bottom: 3px;
@@ -40,4 +40,16 @@ span {
     vertical-align: middle;
     font-size: 30px;
     color: var(--Color);
+}
+.Tags{
+    color: var(--Color);
+    font-size: medium;
+}
+span img{
+
+    vertical-align: middle;
+}
+li{
+    line-height: normal;
+    font-size: large;
 }
