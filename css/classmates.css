@@ -1,10 +1,15 @@
 /*本css文件由ZBN整理自萌娘百科*/
+*{
+    transition: .5s;
+}
 #content {
     margin-left: 1em;
     margin-right: 1em;
     background-color: rgba(255, 255, 255, 0.8);
     margin-top: 110px;
     z-index: 1;
+    border-radius: 5px;
+    padding: 0.5em;
 }
 .firstHeading {
     border-bottom: 2px solid #49b1f5;
@@ -52,4 +57,15 @@ span img{
 li{
     line-height: normal;
     font-size: large;
+}
+li .hidden{
+    background-color: #000;
+    color: #000;
+}
+li .hidden:hover{
+    color: #fff;
+}
+.timeline-classmate{
+    width: 30%;
+    background-color: rgba(255,255,255,0.4);
 }
