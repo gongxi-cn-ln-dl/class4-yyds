@@ -7,6 +7,12 @@
 a{
     text-decoration: none;
 }
+p{
+    margin: 0;
+}
+del{
+    font-size: small;
+}
 #main-container{
     display: flex;
     margin: 0 auto;
@@ -29,7 +35,9 @@ a{
     border: .15rem solid #49b1f5;
     border-radius: .3rem;
     content: '';
+    z-index: 1;
     transition: all .2s ease-in-out;
+    background-color: #fff;
 }
 .timeline-item:after {
     position: absolute;
@@ -43,6 +51,8 @@ a{
 }
 .timeline-item-year:before{
     border-color: #ff7242;;
+    background-color: #fff;
+    z-index: 1;
 }
 .timeline-item-year:after{
     height: 2rem;
@@ -67,15 +77,18 @@ a{
     margin-right: 4px;
     width: 17px;
 }
-.timeline-item-info a{
+.timeline-item-info .title{
     color: #000;
     line-height: 2rem;
     font-family: 宋体;
     font-size: 1.1em;
     transition: all .3s;
 }
-.timeline-item-info a:hover{
+.timeline-item-info .title:hover{
     color: #49b1f5;
+
+}
+.timeline-item-info a:hover{
     transform: translateX(10px);
     margin-left: 10px;
 }
