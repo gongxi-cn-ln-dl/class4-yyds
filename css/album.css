@@ -4,6 +4,9 @@
     font-family: Consolas;
     font-size: 25pt;
 }
+/*body{*/
+/*    overflow-y:hidden;*/
+/*}*/
 a{
     text-decoration: none;
 }
@@ -45,9 +48,12 @@ del{
     left: 0;
     z-index: 0;
     width: .1rem;
-    height: 6rem;
+    height: 8rem;
     background: #aadafa;
     content: '';
+}
+.longer:after{
+    height: 20rem;
 }
 .timeline-item-year:before{
     border-color: #ff7242;;

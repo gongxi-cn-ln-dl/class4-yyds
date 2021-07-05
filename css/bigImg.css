@@ -11,6 +11,10 @@
     right: 0;
     z-index: 100;
 }
+#showImg{
+    width: 75%;
+    height:75%
+}
 #showImg img{
     position: absolute;
     top: 50%;

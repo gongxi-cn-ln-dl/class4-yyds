@@ -1,7 +1,7 @@
 'use strict'
-document.getElementById('bigImg').style.visibility="hidden"
+// document.getElementById('bigImg').style.visibility="hidden"
 
-function showBigger(folderName,picName,width,height) {
+function showBigger(folderName,picName,width,height,mode=0) {
     document.getElementById('bigImg').style.visibility="visible"
 
     let pageWidth = document.body.clientWidth * 0.7
@@ -9,8 +9,11 @@ function showBigger(folderName,picName,width,height) {
 
     let containerObj = document.getElementById("showImg")
     let imgObj = document.createElement("img")
-
-    imgObj.src = `https://cdn.jsdelivr.net/gh/gongxi-cn-ln-dl/repo-for-class4/lighter_img/${folderName}/${picName}`
+    if(mode===0){
+        imgObj.src = `https://cdn.jsdelivr.net/gh/gongxi-cn-ln-dl/repo-for-class4/lighter_img/${folderName}/${picName}`
+    }else {
+        imgObj.src = `res/${folderName}/${picName}`
+    }
     imgObj.alt = picName
     imgObj.id = "Pic-showing"
 
@@ -28,12 +31,12 @@ function showBigger(folderName,picName,width,height) {
         if(nowImgWidth>pageWidth){
             small_time = imgWidth / pageWidth
         }
-        imgObj.width = imgWidth / small_time
-        imgObj.height = imgHeight / small_time
+        // imgObj.width = imgWidth / small_time
+        // imgObj.height = imgHeight / small_time
         containerObj.appendChild(imgObj)
 
-        imgObj.style.width = imgWidth / small_time
-        imgObj.style.height = imgHeight / small_time
+        // imgObj.style.width = imgWidth / small_time
+        // imgObj.style.height = imgHeight / small_time
     }
     imgObj.addEventListener('click',hideBigger)
     console.log(pageHeight,pageWidth,imgHeight,imgWidth,imgObj.height,imgObj.width)

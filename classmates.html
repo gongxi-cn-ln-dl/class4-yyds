@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>个人</title>
     <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/classmates.css">
 </head>
 <body>
 <div id="nav">
@@ -23,9 +24,13 @@
     <div class="navs" id="nav-5">未登录</div>
 </div>
 
-<div id="exit" onclick="reLogin('退出登录')">
-    <img alt="退出" height="64" src="res/exit.png" width="64">
+<div id="content">
+    <div id="sort-button">
+        <span id="sort-btn-span">按小组/<b>按座位</b></span>
+        <img src="res/icon/单选-未选中.png" alt="未选中" id="btnStatus" onclick="changeStatus()">
+    </div>
 </div>
+
 
 <div id="photo-container">
     <a href="#">
@@ -35,5 +40,6 @@
 </body>
 <script src="js/md5.js"></script>
 <script src="js/main.js"></script>
+<script src="js/classmates.js"></script>
 
 </html>
