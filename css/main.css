@@ -1,8 +1,9 @@
 *{
     box-sizing: border-box;
-    line-height: 100%;
+
     font-family: Consolas;
     font-size: 25pt;
+    line-height: normal;
 }
 #nav{
     position: absolute;
@@ -18,7 +19,7 @@
     opacity: 1;
     transition: all .5s;
     background: rgba(255,255,255,.8);
-    box-shadow: 0 5px 6px -5px rgb(133 133 133 / 60%);
+    box-shadow: 0 5px 6px -5px rgb(133,133,133);
 }
 #blog-name{
     flex: 1;
@@ -29,6 +30,7 @@
 .navs{
     position: relative;
     display: inline-block;
+
     padding: 0 0 0 .7rem;
     color: #000000;
     text-decoration: none;

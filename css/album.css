@@ -53,7 +53,7 @@ del{
     content: '';
 }
 .longer:after{
-    height: 20rem;
+    height: 23rem;
 }
 .timeline-item-year:before{
     border-color: #ff7242;;

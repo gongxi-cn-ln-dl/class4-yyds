@@ -3,6 +3,9 @@
     transition: .5s;
     /*font-size: large;*/
 }
+body{
+    overflow-x: hidden;
+}
 #content {
     margin-left: 1em;
     margin-right: 1em;
