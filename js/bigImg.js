@@ -35,10 +35,10 @@ function showBigger(folderName,picName,width,height,mode=0) {
         //     small_time = imgWidth / pageWidth
         // }
     if(imgHeight>imgWidth){
-        imgObj.style.height = "80%";
+        imgObj.style.height = "60%";
         containerObj.appendChild(imgObj)
     }else{
-        imgObj.style.width = "80%";
+        imgObj.style.width = "60%";
         containerObj.appendChild(imgObj)
     }
         // imgObj.width = imgWidth / small_time
@@ -50,7 +50,7 @@ function showBigger(folderName,picName,width,height,mode=0) {
         // containerObj.appendChild(imgObj)
     // }
     imgObj.addEventListener('click',hideBigger)
-    // console.log(pageHeight,pageWidth,imgHeight,imgWidth,imgObj.height,imgObj.width)
+    console.log(pageHeight,pageWidth,imgHeight,imgWidth,imgObj.height,imgObj.width)
 }
 function hideBigger() {
     document.getElementById('bigImg').style.visibility="hidden"

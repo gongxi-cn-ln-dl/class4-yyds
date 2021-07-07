@@ -20,6 +20,7 @@
     transition: all .5s;
     background: rgba(255,255,255,.8);
     box-shadow: 0 5px 6px -5px rgb(133,133,133);
+    left: 0;
 }
 #blog-name{
     flex: 1;
