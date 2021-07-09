@@ -7,15 +7,13 @@
     <link href="../../css/main.css" rel="stylesheet">
     <link href="../../css/album.css" rel="stylesheet">
     <link href="../../css/classmatesInfo.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/games.css">
     <style>
-        /*html{*/
-        /*    background-image: */
-        /*}*/
         body {
             --Color: #EBA3AB;
+            transition: 1s;
         }
-        #background-c{
+
+        #background-c {
             left: 0;
             /*background-image: url();*/
             background-repeat: repeat-y;
@@ -26,6 +24,16 @@
             object-fit: cover;
             object-position: center center;
             z-index: -1;
+        }
+
+        /*    游戏区的css*/
+        .luckyCard-item {
+            width: 15%;
+            box-shadow: darkgoldenrod 0 0 10px;
+        }
+
+        .luckyCard-item:hover {
+            box-shadow: hotpink 0 0 12px;
         }
     </style>
 </head>
@@ -53,12 +61,12 @@
 <div class="mw-body" id="content" role="main">
     <h1 class="firstHeading" id="firstHeading" lang="zh-CN">姓名</h1>
     <div class="infoBox">
-        <div class="infoBoxText">进条目啥都别说，先一起喊：<span><b>关键词</b></span></div>
+        <div class="infoBoxText">进条目啥都别说，先一起喊：<span><b>我永远喜欢摩拉克斯！</b></span></div>
     </div>
     <div style="display:table;margin: auto; background-color:transparent;width:auto;">
         <div>
             <div class="Quotation-Marks" style="vertical-align: top;">“</div>
-            <div class="Key-Sentence">这是一个关键句子</div>
+            <div class="Key-Sentence">我永远喜欢摩拉克斯达达利亚魈枫原万叶巴巴托斯迪卢克阿贝多胡桃甘雨德克萨斯阿米娅凯尔希芙兰卡初雪达不溜霜叶芳汀剩下记不住了</div>
             <div class="Quotation-Marks" style="vertical-align: bottom;">”</div>
         </div>
     </div>
@@ -66,23 +74,138 @@
     <ul>
 
     </ul>
-    <h2 class="firstHeading">来Van游戏-别踩白块儿</h2>
-    <h2 class="centerP">score</h2>
-    <h2 class="centerP" id="score">0</h2>
-    <div id="main">
-        <div id="con"></div>
+    <h2 class="firstHeading">来Van游戏-圈小猫</h2>
+    <div align="center">
+        <script src="../../js/phaser.min.js"></script>
+        <script src="../../js/catch-the-cat.js"></script>
+        <div id="catch-the-cat"></div>
+        <script>window.game = new CatchTheCatGame({
+            w: 11,
+            h: 11,
+            r: 20,
+            backgroundColor: 16777215,
+            parent: "catch-the-cat",
+            statusBarAlign: "center",
+            credit: " "
+        })</script>
     </div>
-    <div class="btn">
-        <button class="start" onclick="start()">
-            开始游戏
-        </button>
+    <h2 class="firstHeading">点击抽取今日幸运</h2>
+    <div class="Lucky-area" style="margin: 0 auto">
+        <table>
+            <tr>
+                <td>
+                    <a href="#" id="Card-1">
+                        <img class="luckyCard-item" src="../../res/a素材/贴图.png" alt="">
+                    </a>
+                    <a href="#" id="Card-2">
+                        <img class="luckyCard-item" src="../../res/a素材/贴图.png" alt="">
+                    </a>
+                    <a href="#" id="Card-3">
+                        <img class="luckyCard-item" src="../../res/a素材/贴图.png" alt="">
+                    </a>
+                    <a href="#" id="Card-4">
+                        <img class="luckyCard-item" src="../../res/a素材/贴图.png" alt="">
+                    </a>
+                    <a href="#" id="Card-5">
+                        <img class="luckyCard-item" src="../../res/a素材/贴图.png" alt="">
+                    </a>
+                    <a href="#" id="Card-6">
+                        <img class="luckyCard-item" src="../../res/a素材/贴图.png" alt="">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#" id="Card-7">
+                        <img class="luckyCard-item" src="../../res/a素材/贴图.png" alt="">
+                    </a>
+                    <a href="#" id="Card-8">
+                        <img class="luckyCard-item" src="../../res/a素材/贴图.png" alt="">
+                    </a>
+                    <a href="#" id="Card-9">
+                        <img class="luckyCard-item" src="../../res/a素材/贴图.png" alt="">
+                    </a>
+                    <a href="#" id="Card-10">
+                        <img class="luckyCard-item" src="../../res/a素材/贴图.png" alt="">
+                    </a>
+                    <a href="#" id="Card-11">
+                        <img class="luckyCard-item" src="../../res/a素材/贴图.png" alt="">
+                    </a>
+                    <a href="#" id="Card-12">
+                        <img class="luckyCard-item" src="../../res/a素材/贴图.png" alt="">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#" id="Card-13">
+                        <img class="luckyCard-item" src="../../res/a素材/贴图.png" alt="">
+                    </a>
+                    <a href="#" id="Card-14">
+                        <img class="luckyCard-item" src="../../res/a素材/贴图.png" alt="">
+                    </a>
+                    <a href="#" id="Card-15">
+                        <img class="luckyCard-item" src="../../res/a素材/贴图.png" alt="">
+                    </a>
+                    <a href="#" id="Card-16">
+                        <img class="luckyCard-item" src="../../res/a素材/贴图.png" alt="">
+                    </a>
+                    <a href="#" id="Card-17">
+                        <img class="luckyCard-item" src="../../res/a素材/贴图.png" alt="">
+                    </a>
+                    <a href="#" id="Card-18">
+                        <img class="luckyCard-item" src="../../res/a素材/贴图.png" alt="">
+                    </a>
+                </td>
+            </tr>
+        </table>
     </div>
 
+</div>
 
-</div>
-</div>
 </body>
 <script src="../../js/md5.js"></script>
 <script src="../../js/main.js"></script>
-<script src="../../js/games.js"></script>
+<script>
+
+
+    function randomsort(a, b) {
+        return Math.random() > .5 ? -1 : 1;
+        //用Math.random()函数生成0~1之间的随机数与0.5比较，返回-1或1
+    }
+
+    let linkDict = {
+        1: "https://nd.mbd.baidu.com/r/ptQAO4qIFO",
+        2: "https://m.onlinedown.net/soft/702165.htm",
+        3: "https://m.51test.net/zhongkao/liaoning/dalian/wldaan/",
+        4: "https://ms.mbd.baidu.com/r/ptPtYzA5Yk",
+        5: "https://ml.mbd.baidu.com/r/ptPqN0cixW",
+        6: "https://b23.tv/YUtbNf",
+        7: "https://b23.tv/AdzB2R",
+        8: "https://b23.tv/mzlEK3",
+        9: "https://b23.tv/aepyBh",
+        10: "https://b23.tv/JG97qm",
+        11: "https://b23.tv/INuNRL",
+        12: "https://b23.tv/APBnvx",
+        13: "https://b23.tv/1KXVI2",
+        14: "https://b23.tv/hGuPui",
+        15: "https://b23.tv/Mo3jYx",
+        16: "https://b23.tv/5X9BM4",
+        17: "https://b23.tv/iDX8OJ",
+        18: "https://b23.tv/1WRmTJ"
+    }
+    let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+    arr.sort(randomsort);
+    arr.sort(randomsort);
+    arr.sort(randomsort);
+    arr.sort(randomsort);
+    arr.sort(randomsort);
+    console.log(arr, arr.length)
+    for (let i = 0; i < 18; i++) {
+        let idName = "Card-" + arr[i]
+        let aLinkObj = document.getElementById(idName)
+        aLinkObj.href = linkDict[i]
+        console.log(i, arr[i], idName)
+    }
+</script>
 </html>
