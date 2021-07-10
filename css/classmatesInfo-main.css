@@ -21,7 +21,7 @@ body{
 }
 .links{
     font-size: large;
-    color: #00a1d6;
+    color: var(--Color);
     text-decoration: none;
 }
 .firstHeading {
@@ -89,8 +89,4 @@ li .hidden:hover{
     width: 30%;
     background-color: rgba(255,255,255,0.4);
 }
-.note{
-    font-size: smaller;
-    text-decoration: none;
-    color: #858585;
-}
+

@@ -31,7 +31,7 @@ body{
     width: 100%;
     vertical-align: middle;
     max-width: 100%;
-    border-left: 10px solid var(--Color_);
+
     margin: auto;
 }
 li{
@@ -63,7 +63,7 @@ span {
     font-size: 30px;
     background: var(--Color);
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;;
+    -webkit-background-clip: text;
 }
 .Tags{
     background: var(--Color);

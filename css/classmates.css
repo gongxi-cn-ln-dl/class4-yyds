@@ -1,5 +1,6 @@
 *{
     transition: 2s;
+
 }
 #content{
     margin-top: 110px;
@@ -13,4 +14,16 @@
 }
 #sort-button svg:hover{
     color: #13227a;
+}
+table a{
+    margin: 0 auto;
+    font-size: larger;
+}
+.links{
+    color: #00a1d6;
+    text-decoration: none;
+}
+.links-unfinished{
+    color: #858585;
+    text-decoration: none;
 }
