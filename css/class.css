@@ -1,11 +1,11 @@
+
 .main-body{
     margin: 110px 30px 30px;
     display: flex;
-
 }
 
 #describe{
-    width: 30%;
+    width: 28%;
     border: #5269be 3px solid;
     border-radius: 25px;
     display: inline-block;
@@ -14,11 +14,10 @@
 #paraC p{
     font-family: 楷体;
     font-size: 20pt;
-
 }
 #right-ele{
     right: 0;
-    width: 65%;
+    width: 70%;
     margin: 2%;
 }
 #photo-container{
@@ -29,9 +28,15 @@
     display: inline-block;
 }
 #teachers{
-    width: 65%;
+    margin-top: 25px;
+    width: 20em;
     clear: both;
 }
 #teachers table{
     width: 100%;
+    border-radius: 5px;
+
+}
+td{
+    text-align: center;
 }
