@@ -5,38 +5,37 @@
 <link rel="icon" href="../../res/icon/ICON.ico" type="image/x-icon">
     <title></title>
     <link href="../../css/main.css" rel="stylesheet">
-    <link href="../../css/bigImg.css" rel="stylesheet">
+    <link href="../../css/videos.css" rel="stylesheet">
 </head>
 <body id="app">
 <div id="nav">
     >
 </div>
 
-<div id="exit" onclick="reLogin('退出登录')">
-
-</div>
-
-<div id="pic-container">
-
-</div>
-
-<div id="bigImg" style="visibility: hidden">
-    <div id="showImg">
-
+<div id="main-area">
+    <div id="video-container">
+        <iframe scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+    </div>
+    <div id="menu-container">
+        <div id="menu">
+            <div id="menu-title">选集</div>
+            <div id="menu-content">
+                <div class="parts firstP" onclick="PlayVideo('')"></div>
+                <div class="parts" onclick="PlayVideo('')"></div>
+                <div class="parts lastP" onclick="PlayVideo('')"></div>
+            </div>
+            <div id="selectV" >
+                视频源：<br/>
+                <input type="radio" name="selectV" value="哔哩哔哩" id="BiliBiliRadio">哔哩哔哩<br/>
+                <input type="radio" name="selectV" value="优酷">优酷
+            </div>
+        </div>
     </div>
 </div>
 
-<div id="ChooseX">
-    <p>清晰度：</p>
-    <input name="0" type="radio" value="480p" >480p
-    <input checked name="0" type="radio" value="720p">720p
-    <input name="0" type="radio" value="1080p">1080p
-</div>
 </body>
-<script src="../../js/md5.js"></script>
-<script src="../../js/crypto-js-4.0.0/crypto-js-4.0.0/crypto-js.js"></script>
+
 <script src="../../js/main.js"></script>
-<script src="../../js/bigImg.js"></script>
-<script src="../../js/showVideo.js"></script>
-<script src="../../js/jquery.js"></script>
+
+<script src="../../js/videos.js"></script>
 </html>
