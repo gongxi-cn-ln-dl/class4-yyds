@@ -15,7 +15,6 @@ let YoukuRadio_Style = document.getElementsByTagName("input")[1];
 let firstVideoButton = document.getElementsByClassName("firstP")[0];
 
 
-
 let isHorizontal;
 let baseVideoUrl;
 
@@ -37,7 +36,7 @@ if (WindowWidth > WindowHeight || isPC) {
     sV_Style.visibility = "visible";
     BiliRadio_Style.checked = false;
     YoukuRadio_Style.checked = true;
-} else{
+} else {
     isHorizontal = false;
     baseVideoUrl = "//www.bilibili.com/blackboard/html5mobileplayer.html?"
     mainC_Style.flexDirection = "column";
@@ -111,11 +110,22 @@ BiliBiliVideoLinks = {
     '杨竹1': "54"
 }
 YoukuVideoLinks = {
+    "DSCN1254": "XNTE5MzkxMDk1Mg==",
+    "DSCN1264": "XNTE5MzA5MTAxNg==",
+    "DSCN1520": "XNTE5MzkwNTk5Mg==",
+    "DSCN1697": "XNTE5MzkwMzczNg==",
+    "DSCN1701": "XNTE5MzkwMzM3Ng==",
+    "DSCN1702": "XNTE5MzkwMzIwOA==",
     "ZY4": "XNTE5MzM1NDcwNA==",
+    "努力学习4": "XNTE5MzQyMDk0OA==",
     "博曹1": "XNTE5MzM1NDkyMA==",
+    "四_陈梓盈_曹瀚允": "XNTE5MzQyMDgxMg==",
+    "尹航_刘艾佳2组": "XNTE5MzQyMDEwMA==",
+    "张博宁张斯秦_3_雨我无瓜": "XNTE5MzQxOTk2OA==",
+    "李心雨，慕春博1": "XNTE5MzQyMTIwMA==",
+    "杨竹1": "XNTE5MzQyMDY2NA==",
     "DSCN1521": "XNTE5MzA5MTgyMA==",
     "DSCN1540": "XNTE5MzA5NzIxNg==",
-    "DSCN1264": "XNTE5MzA5MTAxNg==",
     "DSCN1261": "XNTE5MzA3OTY2MA==",
     "DSCN1257": "XNTE5MzA3OTIwNA==",
     "DSCN1246": "XNTE5MzA3MzU0MA==",
@@ -154,23 +164,26 @@ YoukuVideoLinks = {
     "DSCN0251": "XNTE5MDgwMDUzNg==",
     "DSCN0250": "XNTE5MDgwMDM2NA==",
     "DSCN0249": "XNTE5MDgwMDE4NA==",
-    "d2": "XNTE5MDc5OTcwNA=="
+    "00d2": "XNTE5MDc5OTcwNA=="
 }
+
 
 function BV(title) {
     let iframeObject = document.getElementsByTagName("iframe")[0];
     iframeObject.src = baseVideoUrl + "aid=759654271&page=" + BiliBiliVideoLinks[title];
 }
+
 function YV(title) {
     let iframeObject = document.getElementsByTagName("iframe")[0];
-    iframeObject.src = "https://player.youku.com/embed/"+YoukuVideoLinks[title];
+    iframeObject.src = "https://player.youku.com/embed/" + YoukuVideoLinks[title];
 }
+
 function PlayVideo(title) {
     let BiliBiliRadio = document.getElementsByTagName("input")[0];
     if (BiliBiliRadio.checked === true) {
         BV(title);
         console.log(title, BiliBiliRadio.checked);
-    }else{
+    } else {
         YV(title);
     }
 }
