@@ -11,6 +11,8 @@ function showBigger(folderName,picName,width,height,mode=0) {
     let imgObj = document.createElement("img")
     if(mode===0){
         imgObj.src = `https://cdn.jsdelivr.net/gh/gongxi-cn-ln-dl/repo-for-class4/lighter_img/${folderName}/${picName}`
+    }else if(mode===11){
+        imgObj.src = `../../res/${folderName}/lighter/${picName}`
     }else {
         imgObj.src = `res/${folderName}/${picName}`
     }

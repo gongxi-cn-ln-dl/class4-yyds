@@ -4,17 +4,14 @@
 }
 #content{
     margin-top: 110px;
+    margin-left: 50px;
+    margin-bottom: 50px;
 }
-#sort-button{
-    display: inline-block;
-    place-items: center;
+
+#content{
+
 }
-#sort-button img{
-    right:0
-}
-#sort-button svg:hover{
-    color: #13227a;
-}
+
 table a{
     margin: 0 auto;
     font-size: larger;

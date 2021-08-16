@@ -1,0 +1,15 @@
+#thanks{
+    bottom: 0;
+    height: 100px;
+    background-color: #333333;
+    width: 100%;
+    display: flex;
+}
+#thanks p{
+    margin: 0 auto;
+    line-height: 100px;
+    color: #b9bebe;
+}
+#thanks span{
+
+}
