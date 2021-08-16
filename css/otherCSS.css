@@ -1,14 +1,14 @@
 #thanks{
     bottom: 0;
     height: 100px;
-    background-color: #333333;
+    background-color: #d0d0d0;
     width: 100%;
     display: flex;
 }
 #thanks p{
     margin: 0 auto;
     line-height: 100px;
-    color: #b9bebe;
+    color: #3a3a3a;
 }
 #thanks span{
 
