@@ -6,6 +6,8 @@
 <link rel="icon" href="res/icon/ICON.ico" type="image/x-icon">
     <title>首页</title>
     <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/videos.css">
 </head>
 <body>
 <div id="nav">
@@ -24,10 +26,30 @@
     </a>
     <div class="navs" id="nav-5">未登录</div>
 </div>
+<div id="main-body">
 
-</body>
+    <div id="main-area">
+        <div id="video-container">
+            <iframe scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+        </div>
+        <div id="menu-container">
+            <div id="menu">
+                <div id="menu-title">选集</div>
+                <div id="menu-content">
+                    <div class="parts firstP lastP" onclick="PlayVideo('')">使用教程</div>
+                </div>
+                <div id="selectV" >
+                    视频源：<br/>
+                    <input type="radio" name="selectV" value="哔哩哔哩" id="BiliBiliRadio">哔哩哔哩<br/>
+                    <input type="radio" name="selectV" value="优酷">优酷
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1280231205'%3E%3C/span%3E%3Cscript src='https://s9.cnzz.com/z_stat.php%3Fid%3D1280231205' type='text/javascript'%3E%3C/script%3E"));</script></body>
 
 <script src="js/md5.js"></script>
 <script src="js/main.js"></script>
-
+<script src="js/videos.js"></script>
 </html>

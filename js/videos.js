@@ -164,7 +164,7 @@ YoukuVideoLinks = {
     "DSCN0251": "XNTE5MDgwMDUzNg==",
     "DSCN0250": "XNTE5MDgwMDM2NA==",
     "DSCN0249": "XNTE5MDgwMDE4NA==",
-    "00d2": "XNTE5MDc5OTcwNA=="
+    "d2": "XNTE5MDc5OTcwNA=="
 }
 
 
