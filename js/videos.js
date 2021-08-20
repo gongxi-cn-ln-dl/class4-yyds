@@ -107,7 +107,8 @@ BiliBiliVideoLinks = {
     '尹航_刘艾佳2组': "55",
     '张博宁张斯秦_3_雨我无瓜': "56",
     '李心雨，慕春博1': "51",
-    '杨竹1': "54"
+    '杨竹1': "54",
+    '帮助视频':"57"
 }
 YoukuVideoLinks = {
     "DSCN1254": "XNTE5MzkxMDk1Mg==",
@@ -164,7 +165,8 @@ YoukuVideoLinks = {
     "DSCN0251": "XNTE5MDgwMDUzNg==",
     "DSCN0250": "XNTE5MDgwMDM2NA==",
     "DSCN0249": "XNTE5MDgwMDE4NA==",
-    "d2": "XNTE5MDc5OTcwNA=="
+    "d2": "XNTE5MDc5OTcwNA==",
+    "帮助视频": "XNTE5NTkyMDQ1Ng=="
 }
 
 
